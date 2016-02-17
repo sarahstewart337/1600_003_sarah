@@ -10,17 +10,14 @@ public class Arrays : MonoBehaviour
 
 	{
 	
-		players = GameObject.FindGameObjectsWithTag ("Player");
+		players = GameObject.FindGameObjectsWithTag("Player");
 
-		for (int i = 0; i < players.Length; i++)
+		for(int i = 0; i < players.Length; i++)
+
 		{
-			Debug.Log ("Player Number " + i + " is named " + players [i].name);
+			Debug.Log("Player Number "+i+" is named "+players[i].name);
 		}
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
