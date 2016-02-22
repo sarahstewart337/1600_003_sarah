@@ -11,11 +11,9 @@ public class Arrays : MonoBehaviour
 	{
 	
 		players = GameObject.FindGameObjectsWithTag("Player");
-<<<<<<< HEAD
-=======
 
 		for(int i = 0; i < players.Length; i++)
->>>>>>> Arrays
+
 
 		{
 			Debug.Log("Player Number "+i+" is named "+players[i].name);
