@@ -4,25 +4,44 @@ using System.Collections;
 public class Enumeration : MonoBehaviour 
 
 {
-	enum Direction{North, East, South, West}; 
-
-
-	void Start ()
+	public enum directions
 	{
-	
-		Direction myDirection;
+		North, 
+		East, 
+		South, 
+		West
+	} 
 
-		myDirection = Direction.North;
-	}
-
-	Direction ReverseDirection (Direction dir)
+	void ChangeDirection(directions _d)
 	{
-		if(dir == Direction.North)
-			dir = Direction.South
+		currentDirection = _d;
+		print (currentDirection);
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+		public directions currentDirection;
+
+		void OnMouseDown()
+	{
+			switch(currentDirection)
+		{
+			case directions.North:
+				ChangeDirection (directions.South);
+				break;
+
+			case directions.South:
+				ChangeDirection(directions.East);
+				break;
+
+			case directions.East:
+				ChangeDirection (directions.West);
+				break;
+
+			case directions.West:
+				ChangeDirection (directions.North);
+				break;
+
+
 	}
+  }	
 }
