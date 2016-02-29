@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class pullrequest : MonoBehaviour {
+public class Movement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -9,7 +9,8 @@ public class pullrequest : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 	
 	}
 }
