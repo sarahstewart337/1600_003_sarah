@@ -10,22 +10,22 @@ public class Switch : MonoBehaviour
 		switch (intelligence)
 		{
 		case 5:
-			print ("Why hello there good sir! Let me teach you about Trigonometry!");
+			print ("Hello! are you a fan of Adele");
 			break;
 		case 4:
-			print ("Hello and good day!");
+			print ("Hello! are you a fan of 21 Pilots");
 			break;
 		case 3:
-			print ("Whadya want?");
+			print ("do you like Paramore?");
 			break;
 		case 2:
-			print ("Grog SMASH!");
+			print ("asdf Justin Bieber!");
 			break;
 		case 1:
-			print ("Ulg, glib, Pblblblblb");
+			print ("oNe dIrECtiOn...");
 			break;
 		default:
-			print ("Incorrect intelligence level.");
+			print ("Listen to better music please");
 			break;
 		}
 	}
